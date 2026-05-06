@@ -1,0 +1,135 @@
+===========================
+HR INTERVIEW RUBRIC & GUIDELINES
+===========================
+
+SECTION 1: GENERAL INTERVIEW PRINCIPLES
+-----------------------------------------
+- Interviews should assess candidates fairly based on competency, not subjective bias.
+- Use behavioral questions (STAR method: Situation, Task, Action, Result).
+- Evaluate both technical fit and cultural alignment.
+- All candidates for the same role should be asked the same core questions.
+- Interviewers must remain neutral and avoid leading questions.
+
+SECTION 2: CORE HR COMPETENCIES TO ASSESS
+-------------------------------------------
+1. Communication Skills
+   - Can the candidate articulate ideas clearly?
+   - Do they listen actively and respond thoughtfully?
+   - Scoring: 1 (Poor) to 5 (Excellent)
+
+2. Problem-Solving Ability
+   - Can they break down complex problems logically?
+   - Do they demonstrate creative thinking?
+   - Scoring: 1 (Poor) to 5 (Excellent)
+
+3. Teamwork & Collaboration
+   - Have they worked effectively in cross-functional teams?
+   - Do they demonstrate empathy and respect for others?
+   - Scoring: 1 (Poor) to 5 (Excellent)
+
+4. Adaptability & Resilience
+   - How do they handle change and ambiguity?
+   - Can they recover gracefully from failures?
+   - Scoring: 1 (Poor) to 5 (Excellent)
+
+5. Leadership & Initiative
+   - Have they taken ownership of projects or problems?
+   - Do they inspire and motivate others?
+   - Scoring: 1 (Poor) to 5 (Excellent)
+
+6. Work Ethic & Accountability
+   - Are they self-driven and results-oriented?
+   - Do they own their mistakes and learn from them?
+   - Scoring: 1 (Poor) to 5 (Excellent)
+
+SECTION 3: STANDARD INTERVIEW QUESTIONS
+-----------------------------------------
+OPENING QUESTIONS:
+Q1. Tell me about yourself and your professional background.
+    - Look for: clear narrative, relevant highlights, confident delivery
+    - Red flags: rambling, no structure, irrelevant personal details
+
+Q2. Why are you interested in this role/company?
+    - Look for: company research, genuine motivation, role alignment
+    - Red flags: generic answers, focusing only on salary/benefits
+
+BEHAVIORAL QUESTIONS:
+Q3. Tell me about a time you faced a significant challenge at work. How did you handle it?
+    - Look for: STAR format, problem ownership, constructive outcome
+    - Red flags: blaming others, no resolution, vague answer
+
+Q4. Describe a situation where you had to work with a difficult colleague. What did you do?
+    - Look for: empathy, communication, professional conflict resolution
+    - Red flags: badmouthing, avoiding the conflict, no resolution
+
+Q5. Give an example of a time you missed a deadline. What happened and what did you learn?
+    - Look for: accountability, corrective action, lessons learned
+    - Red flags: denying any failure, excessive blame, no learning
+
+Q6. Tell me about a time you led a project or initiative. What was the outcome?
+    - Look for: scope, leadership style, measurable results
+    - Red flags: no concrete outcome, passive role, team credit only
+
+Q7. Describe a situation where you had to adapt to a major change at work.
+    - Look for: flexibility, positive attitude, practical steps taken
+    - Red flags: resistance to change, negativity, no adaptation shown
+
+SITUATIONAL QUESTIONS:
+Q8. If you were assigned a project with an unclear scope and tight deadline, what would you do?
+    - Look for: clarification-seeking, prioritization, proactive approach
+    - Red flags: paralysis, guessing without verification, overwhelmed response
+
+Q9. How would you handle receiving critical feedback from your manager?
+    - Look for: receptiveness, growth mindset, action steps
+    - Red flags: defensiveness, dismissal, emotional reaction
+
+Q10. If two team members had a conflict that was affecting productivity, how would you step in?
+     - Look for: mediation skills, fairness, outcome-focus
+     - Red flags: taking sides, ignoring it, escalating without reason
+
+CLOSING QUESTIONS:
+Q11. Where do you see yourself in 3–5 years?
+     - Look for: ambition aligned with role, realistic planning, company fit
+     - Red flags: vague, unrealistic, or completely misaligned goals
+
+Q12. Do you have any questions for us?
+     - Look for: thoughtful, role-specific questions about team, culture, growth
+     - Red flags: only asking about salary, no questions at all
+
+SECTION 4: EVALUATION RUBRIC
+------------------------------
+SCORE DEFINITIONS:
+5 - Exceptional: Answer exceeds expectations, highly specific, excellent structure
+4 - Strong: Clear, well-structured, meets all expected criteria
+3 - Adequate: Satisfactory answer but lacks depth or specificity
+2 - Weak: Vague, missing key elements, minimal insight
+1 - Poor: Does not answer the question, irrelevant, or alarming red flags
+
+OVERALL HIRING RECOMMENDATION:
+- 45–60 points: Strong Hire
+- 30–44 points: Hire with reservations
+- 15–29 points: Revisit / Hold
+- Below 15:    Do Not Hire
+
+SECTION 5: DIVERSITY, EQUITY & INCLUSION GUIDELINES
+-----------------------------------------------------
+- Avoid questions related to age, marital status, religion, nationality, pregnancy, or disability.
+- Ensure all candidates are evaluated on the same rubric without bias.
+- Use structured interviews to minimize unconscious bias.
+- If unsure whether a question is appropriate, do not ask it.
+
+SECTION 6: LEGAL COMPLIANCE REMINDERS
+---------------------------------------
+- Do NOT ask: "Do you have children or plan to?" (discriminatory)
+- Do NOT ask: "What is your religious affiliation?" (discriminatory)
+- Do NOT ask: "How old are you?" (discriminatory)
+- Do NOT ask: "Have you ever filed a workers' compensation claim?" (discriminatory)
+- Always document the interview and retain records per company policy.
+
+SECTION 7: POST-INTERVIEW PROCESS
+------------------------------------
+1. Complete the scoring rubric within 24 hours of the interview.
+2. Avoid discussing candidates with non-panel members before consensus.
+3. Submit recommendations via the HR portal.
+4. Provide written feedback to candidates who request it.
+5. Respect candidate confidentiality at all times.
