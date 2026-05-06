@@ -10,8 +10,8 @@ import streamlit as st
 from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
-from langchain.chains import RetrievalQA
-from langchain.prompts import PromptTemplate
+from langchain_classic.chains import RetrievalQA
+from langchain_classic.prompts import PromptTemplate
 
 # ─── Page config (MUST be first Streamlit call) ──────────────────────────────
 st.set_page_config(
@@ -607,7 +607,8 @@ if st.session_state.history:
             sc = get_score_class(entry["score"])
             score_badge = f'<span class="score-badge {sc}">{entry["score"]}/5</span>'
 
-        with st.expander(f"Q{idx}: {entry['question'][:70]}… {entry['score'] and f'[{entry[\"score\"]}/5]' or ''}"):
+        score_text = f" [{entry['score']}/5]" if entry['score'] else ""
+        with st.expander(f"Q{idx}: {entry['question'][:70]}...{score_text}"):
             st.markdown(f'<p class="history-q">📋 {entry["question"]}</p>', unsafe_allow_html=True)
             st.markdown(f'<p class="history-a"><b>Your answer:</b> {entry["answer"]}</p>', unsafe_allow_html=True)
             st.markdown(
