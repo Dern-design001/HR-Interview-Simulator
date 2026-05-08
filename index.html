@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Simulator | AI Interview Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <i data-lucide="target" class="logo-icon"></i>
+                <span>HR SIM</span>
+            </div>
+            <ul class="nav-links">
+                <li class="active" data-page="dashboard">
+                    <i data-lucide="layout-dashboard"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li data-page="interview">
+                    <i data-lucide="mic-2"></i>
+                    <span>Interview</span>
+                </li>
+                <li data-page="knowledge">
+                    <i data-lucide="book-open"></i>
+                    <span>Knowledge</span>
+                </li>
+            </ul>
+            <div class="nav-footer">
+                <p>© 2025 AI Sim Pro</p>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            <header class="top-bar">
+                <div class="search-bar">
+                    <i data-lucide="search"></i>
+                    <input type="text" placeholder="Search guidelines...">
+                </div>
+                <div class="user-profile">
+                    <div class="status-indicator"></div>
+                    <span>AI Engine Active</span>
+                </div>
+            </header>
+
+            <!-- Dashboard Page -->
+            <section id="dashboard" class="page active">
+                <div class="hero">
+                    <h1>Welcome back, <span class="gradient-text">Candidate</span></h1>
+                    <p>Ready to master your next professional milestone?</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i data-lucide="award"></i>
+                        <div>
+                            <h3>4.2 / 5</h3>
+                            <p>Average Score</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i data-lucide="history"></i>
+                        <div>
+                            <h3>12</h3>
+                            <p>Practice Sessions</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i data-lucide="check-circle"></i>
+                        <div>
+                            <h3>85%</h3>
+                            <p>STAR Compliance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-header">
+                    <h2>Select Category</h2>
+                </div>
+                <div class="category-grid">
+                    <div class="category-card" onclick="startInterview('Behavioral')">
+                        <i data-lucide="users"></i>
+                        <h3>Behavioral</h3>
+                        <p>Questions about past actions and teamwork.</p>
+                    </div>
+                    <div class="category-card" onclick="startInterview('Situational')">
+                        <i data-lucide="puzzle"></i>
+                        <h3>Situational</h3>
+                        <p>Hypothetical scenarios and problem solving.</p>
+                    </div>
+                    <div class="category-card" onclick="startInterview('Leadership')">
+                        <i data-lucide="trending-up"></i>
+                        <h3>Leadership</h3>
+                        <p>Management, initiative, and strategy.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interview Page -->
+            <section id="interview" class="page">
+                <div class="interview-header">
+                    <button class="back-btn" onclick="goToPage('dashboard')">
+                        <i data-lucide="arrow-left"></i> Back
+                    </button>
+                    <h2>Active Session: <span id="category-label">Behavioral</span></h2>
+                </div>
+
+                <div class="glass-box interview-box">
+                    <div class="question-container">
+                        <span class="label">QUESTION</span>
+                        <h3 id="question-text">Select a category to begin your session.</h3>
+                    </div>
+
+                    <div class="answer-container">
+                        <span class="label">YOUR RESPONSE</span>
+                        <textarea id="answer-input" placeholder="Use the STAR method: Situation, Task, Action, Result..."></textarea>
+                        <div class="button-group">
+                            <button class="secondary-btn" onclick="nextQuestion()">Skip</button>
+                            <button class="primary-btn" id="submit-btn" onclick="evaluateResponse()">Submit for Feedback</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="feedback-container" class="feedback-container hidden">
+                    <div class="feedback-card">
+                        <div class="feedback-header">
+                            <h3>AI Analysis</h3>
+                            <div id="score-pill" class="pill">Score: --</div>
+                        </div>
+                        <div id="feedback-content" class="feedback-content">
+                            <!-- Feedback will be injected here -->
+                        </div>
+                        <button class="primary-btn mt-1" onclick="resetInterview()">Next Question</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Knowledge Page -->
+            <section id="knowledge" class="page">
+                <div class="hero">
+                    <h1>HR Knowledge <span class="gradient-text">Base</span></h1>
+                    <p>Direct access to rubrics, legal guidelines, and scoring criteria.</p>
+                </div>
+
+                <div class="glass-box">
+                    <div class="input-group">
+                        <input type="text" id="knowledge-query" placeholder="Ask about scoring, DEI, or STAR method...">
+                        <button class="primary-btn" onclick="askKnowledge()">Ask AI</button>
+                    </div>
+                    <div id="knowledge-result" class="knowledge-result hidden">
+                        <!-- Result injected here -->
+                    </div>
+                </div>
+
+                <div class="topic-grid">
+                    <div class="topic-item" onclick="quickAsk('What is the STAR method?')">STAR Method</div>
+                    <div class="topic-item" onclick="quickAsk('Which questions are illegal?')">Legal Boundaries</div>
+                    <div class="topic-item" onclick="quickAsk('Explain the 1-5 scoring rubric')">Scoring Guide</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loader"></div>
+        <p>Analyzing with Gemini AI...</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
