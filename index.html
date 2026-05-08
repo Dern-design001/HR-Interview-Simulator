@@ -730,6 +730,7 @@
         }
 
         function displayFeedback(markdown) {
+            if (!markdown) return;
             const container = document.getElementById('feedback-container');
             const content = document.getElementById('feedback-content');
             const scorePill = document.getElementById('score-pill');
@@ -776,6 +777,9 @@
                 });
 
                 const data = await response.json();
+                if (data.error) throw new Error(data.error);
+                if (!data.result) throw new Error("No response from AI.");
+
                 resultBox.innerHTML = data.result.replace(/\n/g, '<br>');
                 resultBox.classList.remove('hidden');
             } catch (err) {

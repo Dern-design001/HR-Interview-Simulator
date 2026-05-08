@@ -4,7 +4,7 @@ Provides API endpoints for RAG-based interview feedback and Q&A.
 """
 
 import os
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from dotenv import load_dotenv
 from langchain_chroma import Chroma
@@ -39,7 +39,7 @@ def get_rag_chain():
     retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
     
     llm = ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash", 
+        model="gemini-3-flash-preview", 
         google_api_key=GOOGLE_API_KEY, 
         temperature=0.4
     )
@@ -62,6 +62,11 @@ Keep it professional and constructive."""
 chain = get_rag_chain()
 
 # ─── API Endpoints ───────────────────────────────────────────────────────────
+
+@app.route('/')
+def serve_index():
+    """Serve the frontend interface"""
+    return send_from_directory('.', 'index.html')
 
 @app.route('/api/ask', methods=['POST'])
 def ask():
