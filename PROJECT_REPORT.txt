@@ -1,0 +1,87 @@
+================================================================================
+PROJECT REPORT: HR INTERVIEW SIMULATOR
+================================================================================
+
+This report provides a detailed breakdown of every file in the HR Interview 
+Simulator project, explaining its creation rationale, purpose, and core 
+functionality.
+
+--------------------------------------------------------------------------------
+CORE APPLICATION FILES
+--------------------------------------------------------------------------------
+
+1. index.html
+   - Why I created it: To provide a professional, modern, and interactive user 
+     interface (UI) for candidates.
+   - Purpose: This is the single-entry point for the frontend. It handles the 
+     entire visual experience, from the dashboard to the active interview 
+     session.
+   - Main Functions:
+     * Navigation Logic: Manages switching between sections (Dashboard, 
+       Interview, Knowledge Base) without page reloads.
+     * Interview Management: Randomly selects questions and captures responses.
+     * API Integration: Sends candidate answers to the Flask backend for 
+       AI evaluation.
+     * Dynamic UI: Uses Lucide icons and CSS for a premium "app-like" feel.
+
+2. server.py
+   - Why I created it: To act as a bridge between the frontend (HTML/JS) and 
+     the AI logic (Python/Gemini).
+   - Purpose: A Flask-based REST API that processes requests from the web 
+     interface.
+   - Main Functions:
+     * /api/evaluate: Sends questions/answers to Gemini AI for scoring.
+     * /api/ask: Handles natural language queries against the Knowledge Base.
+     * CORS Handling: Enables secure communication between frontend and backend.
+
+3. ingest.py
+   - Why I created it: To power the "Retrieval Augmented Generation" (RAG) system.
+   - Purpose: Processes raw text data (HR rubric) into a searchable format.
+   - Main Functions:
+     * Document Loading: Reads the hr_rubric.txt file.
+     * Text Splitting: Breaks the document into manageable chunks.
+     * Vector Storage: Uses ChromaDB to store data for fast AI retrieval.
+
+--------------------------------------------------------------------------------
+KNOWLEDGE & LOGIC FILES
+--------------------------------------------------------------------------------
+
+4. data/hr_rubric.txt
+   - Why I created it: To provide the "brain" for the AI's evaluations.
+   - Purpose: A comprehensive document containing HR scoring guidelines, legal 
+     boundaries, and best practices (STAR method).
+   - Main Functions: Serves as the ground-truth data source that the AI 
+     references for accurate feedback.
+
+5. app.py
+   - Why I created it: Initially as a rapid prototype.
+   - Purpose: A Streamlit-based version of the application.
+   - Main Functions: Implements the core RAG pipeline and interview flow in 
+     a pure Python environment.
+
+--------------------------------------------------------------------------------
+UTILITY & CONFIGURATION FILES
+--------------------------------------------------------------------------------
+
+6. requirements.txt
+   - Why I created it: To ensure project portability and easy setup.
+   - Purpose: Lists every Python library required (flask, chromadb, etc.).
+
+7. list_models.py
+   - Why I created it: For diagnostic purposes.
+   - Purpose: Verifies that your Google API Key is working and shows 
+     available Gemini models.
+
+8. .env
+   - Why I created it: Security.
+   - Purpose: Stores sensitive information like your GOOGLE_API_KEY.
+
+9. .gitignore
+   - Why I created it: Version control hygiene.
+   - Purpose: Tells Git which files to ignore (like .env and chromadb_storage) 
+     to keep your repository clean and secure.
+
+================================================================================
+Generated on: 2026-05-08
+GitHub Repo: https://github.com/Dern-design001/HR-Interview-Simulator
+================================================================================
